@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WDD231 — Basic Site</title>
+    <meta name="description" content="Minimal HTML page for GitHub checks">
+</head>
+<body>
+    <header>
+        <h1>WDD231 — Basic Site</h1>
+        <p>A minimal, semantic HTML page for repository checks.</p>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>This repository contains a simple HTML file to verify GitHub Pages works.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Your Name</p>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
