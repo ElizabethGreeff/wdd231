@@ -1,0 +1,144 @@
+/*Colour Scheme*/
+
+:root {
+    --primary-color: #292a5e;
+    --secondary-color: #9a8db3;
+    --tertiary-color: #f5a9de;
+    --background-color: #f3e9d7;
+    --text-color: #010101;
+}
+
+
+/*Base Styles*/
+* {
+    box-sizing: border-box;
+    font-family: 'Treasure Map Deadhand', cursive;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+/*Header Styles*/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border: solid 1px var(--secondary-color);
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 7px;
+}
+
+header span{
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding-bottom: 5px;
+}
+
+
+/*Hamburger*/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/*Navigation Styles*/
+
+.navigation {
+    display: none;
+}       
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 0.8rem 10px;
+    border-bottom: solid 1px var(--secondary-color);
+}
+
+.navigation a:hover {
+    background-color: var(--tertiary-color);
+}
+
+.navigation li.current {
+    background-color: var(--secondary-color);
+}
+
+
+h1 {
+    margin-left: 10px;
+}
+
+
+/*Footer Styles*/
+
+footer {
+    text-align: center;
+    padding: 1rem 10px;
+    border-top: solid 1px var(--secondary-color);
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px var(--secondary-color);
+    border-radius: 30px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    background-color: var(--tertiary-color);
+    border-radius: 30px;
+}

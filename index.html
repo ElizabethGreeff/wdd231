@@ -5,37 +5,44 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>WDD231 - Basic Site</title>
     <meta name="description" content="Minimal HTML page for GitHub checks">
+    <meta name="author" content="Elizabeth M. Greeff">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- scripts -->
+     <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>WDD231 — Basic Site</h1>
-        <p>A minimal, semantic HTML page for repository checks.</p>
-        <nav aria-label="Main">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <img src="images/cabin.svg" alt="site icon" width="512" height="512">
+        <span>Lizzy Site Title</span>
+        <button id="ham-btn" class="hamburger"></button>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>About</h2>
-            <p>This repository contains a simple HTML file to verify GitHub Pages works.</p>
-        </section>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Assignment</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
-        </section>
+    <main>
+        <h1>Welcome to Lizzy's WDD231 Basic Site</h1>
+        <p>This is a minimal HTML page</p>
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Your Name</p>
-        <script>
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
+        <div class="social">
+            <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="images/github.svg" alt="github link" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linkedIn link" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="instagram link" width="16" height="16"></a>
+        </div>
+        <p>&copy; 2024</p>
+        <p>last modified: </p>
     </footer>
 </body>
 </html>
