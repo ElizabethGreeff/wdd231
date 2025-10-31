@@ -1,48 +1,80 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>WDD231 - Basic Site</title>
-    <meta name="description" content="Minimal HTML page for GitHub checks">
-    <meta name="author" content="Elizabeth M. Greeff">
+    <title>Elizabeth Greeff | WDD231 Home</title>
+    <meta name="description" content="Elizabeth Greeff's WDD231 home page showcasing projects and coursework.">
+    <meta name="author" content="Elizabeth Greeff">
 
-    <!-- css files -->
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <!-- scripts -->
-     <script src="scripts/navigation.js" defer></script>
+    <!-- JS -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
     <header>
-        <img src="images/cabin.svg" alt="site icon" width="512" height="512">
-        <span>Lizzy Site Title</span>
+        <img src="images/cabin.svg" alt="site logo" width="48" height="48">
+        <span>Elizabeth Greeff</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
 
     <nav id="nav-bar" class="navigation">
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="#">Chamber Assignment</a></li>
+            <li><a href="#">Chamber Project</a></li>
             <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
 
     <main>
-        <h1>Welcome to Lizzy's WDD231 Basic Site</h1>
-        <p>This is a minimal HTML page</p>
+        <h1>Home</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm Elizabeth, a web development student passionate about building clean, creative, and user-friendly
+                designs. I enjoy coding, design, and discovering how to make technology both beautiful and useful.</p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/elizabeth-greeff.webp" alt="Elizabeth Greeff photo" width="200" height="200">
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div id="course-container"></div>
+            <p id="total-credits"></p>
+        </section>
     </main>
 
     <footer>
         <div class="social">
-            <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="images/github.svg" alt="github link" width="16" height="16"></a>
-            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linkedIn link" width="16" height="16"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="instagram link" width="16" height="16"></a>
+            <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="images/github.svg"
+                    alt="GitHub"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
         </div>
-        <p>&copy; 2024</p>
-        <p>last modified: </p>
+        <p>&copy; <span id="year"></span> | Elizabeth Greeff | South Africa</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
+
 </html>

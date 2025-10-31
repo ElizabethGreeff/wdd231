@@ -1,4 +1,12 @@
-/*Colour Scheme*/
+/*font*/
+.dosis {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/*Variables*/
 
 :root {
     --primary-color: #292a5e;
@@ -6,13 +14,15 @@
     --tertiary-color: #f5a9de;
     --background-color: #f3e9d7;
     --text-color: #010101;
+
+    --main-font: 'Dosis', sans-serif;
 }
 
 
 /*Base Styles*/
 * {
     box-sizing: border-box;
-    font-family: 'Treasure Map Deadhand', cursive;
+    font-family: var(--main-font);
 }
 
 body {
@@ -97,7 +107,7 @@ header span{
 }
 
 .navigation li.current {
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
 
 
@@ -105,6 +115,67 @@ h1 {
     margin-left: 10px;
 }
 
+/*Main Styles*/
+
+main {
+    padding: 1rem;
+}
+
+.about,
+.photo,
+.courses {
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.filters button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+}
+
+#course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.course-card {
+    padding: 0.75rem;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.course-card.completed {
+    background-color: var(--primary-color);
+    color: white;
+}
 
 /*Footer Styles*/
 
