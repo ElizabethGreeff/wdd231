@@ -1,0 +1,23 @@
+{
+    "familyName": "Doe",
+    "moveIndate": "2024-07-01",
+    "numberOfPeople": 3,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "John",
+            "gender": "Male",
+            "birthdate": "1980-05-15"
+        },
+        {
+            "name": "Jane",
+            "gender": "Female",
+            "birthdate": "1982-08-22"
+        },
+        {
+            "name": "John jr.",
+            "gender": "Male",
+            "birthdate": "2010-11-30"
+        }
+    ]
+}
