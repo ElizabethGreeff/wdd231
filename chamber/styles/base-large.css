@@ -1,55 +1,36 @@
-@media (min-width: 720px) {
-
-    /* Header */
-    .header-inner {
-        justify-content: flex-start;
-        padding: 0 8px;
-    }
-
-    /* Navigation */
-    .hamburger {
-        display: none;
-    }
-
-    .main-nav ul {
-        display: flex !important;
-        flex-direction: row;
-        background: none;
-        box-shadow: none;
-    }
-
-    .main-nav a {
-        padding: .45rem .6rem;
-    }
-
-    /* Controls */
-    .controls {
-        padding: 0 1rem;
+@media (min-width: 720px) { 
+    .even-weather {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
         gap: 1rem;
+        width: 90%;
+        margin: 0 auto;
     }
 
-    /* Grid Layout */
-    .members-grid {
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    .events-card {
+        max-width: 1300px;
+        grid-column: span 2;
+        gap: 0.5rem;
+        margin: 2rem;
     }
 
-    .member-card {
-        padding: 1rem;
+    .weather {
+        grid-column: span 1;
     }
 
-    .member-card img {
-        width: 96px;
-        height: 96px;
-    }
-
-    .member-info h3 {
-        font-size: 1.1rem;
+    .forecast card {
+        grid-column: span 1;
     }
 
     footer {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 1rem;
+        display: flex;
+    }
+
+    .footer-contact {
+        align-items: left;
+    }
+
+    .footer-meta {
+        align-items: right;
     }
 }

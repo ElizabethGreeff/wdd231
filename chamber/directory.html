@@ -12,12 +12,13 @@
     <!--CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base-large.css">
 
     <!--scripts -->
     <script src="scripts/members.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 
     <!--Social media tags-->
     <meta property="og:title" content="Elizabeth M. Greeff | WDD231 Chamber Directory">
@@ -52,6 +53,40 @@
     </header>
 
     <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <img src="images/hero-large.webp" alt="hero image">
+            <div class="hero-overlay">
+                <button class="cta-btn">Keynote Tickets</button>
+            </div>
+        </section>
+        
+        <div class="even-weather">
+            <!-- EVENTS SECTION -->
+            <section id="eventsSection" class="events-card">
+                <h2>Upcoming Events</h2>
+                <ul id="eventsList"></ul>
+            </section>
+            
+            <!-- WEATHER SECTION -->
+            <div class="weather">
+                <section class="current-weather card">
+                    <h2>Current Weather</h2>
+                    <div id="currentWeather">
+                        <p>Loading current weather...</p>
+                    </div>
+                </section>
+            
+                <section class="forecast card">
+                    <h2>Weather Forecast</h2>
+                    <div id="forecastWeather">
+                        <p>Loading forecast...</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- DIRECTORY CONTROLS -->
         <section class="controls">
             <h2 class="visually-hidden">Directory Controls</h2>
             <div class="view-toggle" role="toolbar" aria-label="View toggle">
@@ -70,6 +105,8 @@
             </div>
         </section>
 
+        <!-- MEMBERS AREA -->
+
         <section id="membersArea" class="members-grid" aria-live="polite" aria-label="Member directory">
             <!-- JS injects cards here -->
         </section>
@@ -79,17 +116,21 @@
         <div class="footer-contact">
             <p><strong>Cape Town Chamber of Commerce</strong></p>
             <p>V&A Waterfront, Cape Town</p>
-            <p><a href="mailto:info@ycapetownchamber.example.com">info@ycapetownchamber.example.com</a> | (+27) 45-725-1326
+            <p><a href="mailto:info@capetownchamber.com">info@capetownchamber.com</a> | (+27) 45-725-1326
             </p>
         </div>
+
+        <div class="social">
+            <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="../images/github.svg" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="../images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.svg" alt="Instagram"></a>
+        </div>
+
         <div class="footer-meta">
             <p>&copy; <span id="year"></span> | Elizabeth Greeff | South Africa</p>
             <p id="lastModified"></p>
         </div>
     </footer>
-
-    <script src="scripts/members.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
 </body>
 
 </html>
