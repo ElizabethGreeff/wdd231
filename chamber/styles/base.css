@@ -409,6 +409,11 @@ footer {
     color: var(--primary-color);
 }
 
+.footer-contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 .social {
     display: flex;
     justify-content: center;
