@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "id": 1,
+            "name": "Oceanview Bakery",
+            "tagline": "Fresh breads & coastal treats",
+            "address": "12 Seaside Ave, Cape Town",
+            "phone": "+27 62-555-0101",
+            "website": "https://oceanview.example.com",
+            "image": "images/oceanview.webp",
+            "membership": 3
+        },
+        {
+            "id": 2,
+            "name": "Harbor Consultancy",
+            "tagline": "Business consulting for small shops",
+            "address": "30 Dock St, Cape Town",
+            "phone": "+27 06-555-0102",
+            "website": "https://harborconsult.example.com",
+            "image": "images/harbour.webp",
+            "membership": 2
+        },
+        {
+            "id": 3,
+            "name": "Green Thumb Nursery",
+            "tagline": "Plants, advice, garden supplies",
+            "address": "5 Garden Lane, Cape Town",
+            "phone": "+27 24-555-0103",
+            "website": "https://greenthumb.example.com",
+            "image": "images/green-thumb.webp",
+            "membership": 1
+        },
+        {
+            "id": 4,
+            "name": "Summit IT Solutions",
+            "tagline": "Tech & web services",
+            "address": "82 Tech Park, Yourtown",
+            "phone": "+27 43-555-0104",
+            "website": "https://summit-it.example.com",
+            "image": "images/summit-it.webp",
+            "membership": 3
+        },
+        {
+            "id": 5,
+            "name": "Coastal Cafe",
+            "tagline": "Coffee and light lunches",
+            "address": "101 Main St, Yourtown",
+            "phone": "+27 60-555-0105",
+            "website": "https://coastalcafe.example.com",
+            "image": "images/coastal-cafe.webp",
+            "membership": 2
+        },
+        {
+            "id": 6,
+            "name": "Lakeside Fitness",
+            "tagline": "Health & wellness classes",
+            "address": "77 Wellness Blvd, Yourtown",
+            "phone": "+27 81-555-0106",
+            "website": "https://lakesidefit.example.com",
+            "image": "images/fitness.webp",
+            "membership": 1
+        },
+        {
+            "id": 7,
+            "name": "Market & Co. Grocers",
+            "tagline": "Local produce & groceries",
+            "address": "9 Market Square, Yourtown",
+            "phone": "+27 42-555-0107",
+            "website": "https://marketco.example.com",
+            "image": "images/market.webp",
+            "membership": 2
+        }
+    ]
+}

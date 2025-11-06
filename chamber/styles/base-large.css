@@ -1,0 +1,55 @@
+@media (min-width: 720px) {
+
+    /* Header */
+    .header-inner {
+        justify-content: flex-start;
+        padding: 0 8px;
+    }
+
+    /* Navigation */
+    .hamburger {
+        display: none;
+    }
+
+    .main-nav ul {
+        display: flex !important;
+        flex-direction: row;
+        background: none;
+        box-shadow: none;
+    }
+
+    .main-nav a {
+        padding: .45rem .6rem;
+    }
+
+    /* Controls */
+    .controls {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+
+    /* Grid Layout */
+    .members-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+
+    .member-card {
+        padding: 1rem;
+    }
+
+    .member-card img {
+        width: 96px;
+        height: 96px;
+    }
+
+    .member-info h3 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cape Town Chamber Directory</title>
+    <meta name="description" content="Directory of Cape Town Chamber of Commerce members." />
+    <meta name="author" content="Elizabeth M. Greeff" />
+    <link rel="icon" href="favicon.ico">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!--scripts -->
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+    <!--Social media tags-->
+    <meta property="og:title" content="Elizabeth M. Greeff | WDD231 Chamber Directory">
+    <meta property="og:description" content="Elizabeth Greeff's WDD231 Chamber of Commerce directory page.">
+    <meta property="og:image"
+        content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
+    <meta property="og:url" content="https://elizabethgreeff.github.io/wdd231/chamber/directory.html">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <img src="images/mountain-logo.svg" alt="cape Town Chamber logo" class="site-logo" width="56" height="56">
+            <div>
+                <h1 class="site-title">Cape Town Chamber</h1>
+                <p class="site-tag">Supporting local business</p>
+            </div>
+
+            <button id="ham-btn" class="hamburger" aria-controls="main-nav" aria-expanded="false"
+                aria-label="Open navigation">
+            </button>
+        </div>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="directory.html" >Directory</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="controls">
+            <h2 class="visually-hidden">Directory Controls</h2>
+            <div class="view-toggle" role="toolbar" aria-label="View toggle">
+                <button id="gridBtn" class="btn active" aria-pressed="true">Grid</button>
+                <button id="listBtn" class="btn" aria-pressed="false">List</button>
+            </div>
+
+            <div class="filter">
+                <label for="membershipSelect">Membership:</label>
+                <select id="membershipSelect" aria-label="Filter membership">
+                    <option value="all">All</option>
+                    <option value="1">Member</option>
+                    <option value="2">Silver</option>
+                    <option value="3">Gold</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="membersArea" class="members-grid" aria-live="polite" aria-label="Member directory">
+            <!-- JS injects cards here -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Cape Town Chamber of Commerce</strong></p>
+            <p>V&A Waterfront, Cape Town</p>
+            <p><a href="mailto:info@ycapetownchamber.example.com">info@ycapetownchamber.example.com</a> | (+27) 45-725-1326
+            </p>
+        </div>
+        <div class="footer-meta">
+            <p>&copy; <span id="year"></span> | Elizabeth Greeff | South Africa</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</body>
+
+</html>
