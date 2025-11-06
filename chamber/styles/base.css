@@ -1,10 +1,16 @@
+.dosis {
+    font-family: "Dosis", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
 :root {
     --primary-color: #2E4A7D;
     --secondary-color: #5a523d;
     --background-color: #F5F6FA;
     --text-color: #222;
     --card-bg: #fff;
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family: "Dosis", sans-serif;
     --radius: 10px;
     --gap: 1rem;
     --max-width: 1100px;
@@ -181,6 +187,13 @@ body {
   margin: 2rem auto;
   padding: 0 1rem;
 }
+
+.home {
+    text-align: left;
+    padding-left: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;}
 
 /* ---------------- Events Section ---------------- */
 .events-card {
@@ -361,14 +374,17 @@ body {
 
 .badge-basic {
     background: #8b8b8b;
+    color: #000000;
 }
 
 .badge-silver {
     background: #7b9dd1;
+    color: #000000;
 }
 
 .badge-gold {
     background: #caa43a;
+    color: #000000;
 }
 
 /* List View */
@@ -415,19 +431,6 @@ footer {
 }
 
 .social a:hover {
-    background-color: var(--tertiary-color);
+    background-color: var(--primary-color);
     border-radius: 30px;
-}
-
-/* Utility */
-.visually-hidden {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
-    border: 0;
-    padding: 0;
-    margin: -1px;
 }

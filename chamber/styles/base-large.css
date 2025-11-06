@@ -25,12 +25,4 @@
     footer {
         display: flex;
     }
-
-    .footer-contact {
-        align-items: left;
-    }
-
-    .footer-meta {
-        align-items: right;
-    }
 }

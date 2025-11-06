@@ -31,7 +31,6 @@ async function fetchWeather() {
 
 
     currentWeatherDiv.innerHTML = `
-      <h2>Current Weather</h2>
       <p><strong>${city}</strong></p>
       <img src="${iconUrl}" alt="${current.weatherDesc[0].value}" width="60">
       <p>${current.temp_C}°C — ${current.weatherDesc[0].value}</p>
@@ -44,7 +43,6 @@ async function fetchWeather() {
     // --- Forecast (next 3 days) ---
     const days = data.weather.slice(1, 4);
     forecastDiv.innerHTML = `
-      <h2>3-Day Forecast</h2>
       ${days.map(day => `
         <div class="forecast-day">
           <p><strong>${new Date(day.date).toLocaleDateString('en-US', { weekday: 'long' })}</strong></p>
