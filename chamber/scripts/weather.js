@@ -40,7 +40,7 @@ async function fetchWeather() {
       <p>🌇 Sunset: ${sunset}</p>
     `;
 
-    // --- Forecast (next 3 days) ---
+    // --- Forecast ---
     const days = data.weather.slice(1, 4);
     forecastDiv.innerHTML = `
       ${days.map(day => `
