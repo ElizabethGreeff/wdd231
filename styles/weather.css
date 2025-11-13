@@ -1,0 +1,49 @@
+:root {
+    --primary-color: #7bb7fc;
+    --background-color: #cbdefa;
+    --text-color: #333333;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+}
+
+.current-temp {
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.weather-description {
+    font-size: 34px;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Arial', sans-serif;
+}
