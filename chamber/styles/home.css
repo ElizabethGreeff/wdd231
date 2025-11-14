@@ -124,6 +124,7 @@ body {
 
 .navigation li.current {
     background-color: var(--primary-color);
+    color: white;
 }
 
 .navigation li.current a {
@@ -185,6 +186,13 @@ body {
     transform: scale(1.05);
 }
 
+.home {
+    color: var(--primary-color);
+    padding-left: 1rem ;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
 /* ---------------- WEATHER & EVENTS ----------------*/
 
 
@@ -218,6 +226,11 @@ body {
 }
 
 /* ---------------- SPOTLIGHTS ---------------- */
+.spotlight-header {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
 
 .spotlight-card {
     background: var(--card-bg);

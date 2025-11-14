@@ -19,7 +19,7 @@ fetch("data/members.json")
                 <p class="spotlight-tagline">${m.tagline}</p>
 
                 <div class="spotlight-content">
-                    <img class="spotlight-img" src="${m.image}" alt="${m.name}">
+                    <img class="spotlight-img" src="${m.image}" alt="${m.name} loading="lazy">
 
                     <div class="spotlight-info">
                         <p><strong>Email:</strong> ${m.email}</p>

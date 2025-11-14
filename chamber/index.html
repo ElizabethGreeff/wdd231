@@ -31,7 +31,7 @@
     <meta property="og:title" content="Elizabeth M. Greeff | WDD231 Chamber Directory">
     <meta property="og:description" content="Elizabeth Greeff's WDD231 Chamber of Commerce directory page.">
     <meta property="og:image"
-        content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
+        content="images/hero-large.webp">
     <meta property="og:url" content="https://elizabethgreeff.github.io/wdd231/chamber/directory.html">
 </head>
 
@@ -63,13 +63,13 @@
     <main>
         <!-- HERO SECTION -->
         <section class="hero">
-            <img src="images/hero-large.webp" alt="hero image">
+            <img src="images/hero-large.webp" alt="hero image" loading="lazy">
             <div class="hero-overlay">
                 <button class="cta-btn">Keynote Tickets</button>
             </div>
         </section>
         
-        <h1>Home</h1>
+        <h3 class="home">Home</h3>
 
         <div class="even-weather">
             <!-- EVENTS -->
@@ -85,7 +85,7 @@
                 <section class="weather-card">
                     <h2>Current Weather</h2>
                     <div id="currentWeather">
-                        <img id="weatherIcon" alt="weather icon">
+                        <img src="images/sunny.svg" id="weatherIcon" alt="weather icon" loading="lazy" height="50px">
                         <p class="temp"></p>
                         <p class="desc"></p>
                         <p class="high"></p>
@@ -108,7 +108,7 @@
     
         <!-- SPOTLIGHTS -->
         <section class="card">
-            <h2>Spotlights</h2>
+            <h2 class="spotlight-header">Spotlights</h2>
             <div id="spotlights"></div>
         </section>
     </main>
