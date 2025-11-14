@@ -17,20 +17,21 @@
 
     <!--CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/base-large.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
 
     <!--scripts -->
-    <script src="scripts/members.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/events.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 
     <!--Social media tags-->
     <meta property="og:title" content="Elizabeth M. Greeff | WDD231 Chamber Directory">
     <meta property="og:description" content="Elizabeth Greeff's WDD231 Chamber of Commerce directory page.">
-    <meta property="og:image" content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
+    <meta property="og:image"
+        content="https://cdn.britannica.com/41/75841-050-FAAE44F0/Table-Mountain-Cape-Town-Western-Bay-South.jpg">
     <meta property="og:url" content="https://elizabethgreeff.github.io/wdd231/chamber/directory.html">
 </head>
 
@@ -69,16 +70,16 @@
         </section>
         
         <h1>Home</h1>
-        
+
         <div class="even-weather">
             <!-- EVENTS -->
-        
+            
             <section class="events-card">
                 <h2>Events</h2>
                 <div id="eventsContainer"></div>
             </section>
-        
-        
+            
+            
             <!-- CURRENT WEATHER -->
             <div class="weather">
                 <section class="weather-card">
@@ -94,40 +95,21 @@
                         <p class="sunset"></p>
                     </div>
                 </section>
-        
+            
                 <!-- FORECAST -->
-        
+                
                 <section class="forecast-card">
                     <h2>Weather Forecast</h2>
                     <div id="forecast"></div>
                 </section>
-        
+                
             </div>
         </div>
-
-        <!-- DIRECTORY CONTROLS -->
-        <section class="controls">
-            <h2 class="visually-hidden">Directory Controls</h2>
-            <div class="view-toggle" role="toolbar" aria-label="View toggle">
-                <button id="gridBtn" class="btn active" aria-pressed="true">Grid</button>
-                <button id="listBtn" class="btn" aria-pressed="false">List</button>
-            </div>
-
-            <div class="filter">
-                <label for="membershipSelect">Membership:</label>
-                <select id="membershipSelect" aria-label="Filter membership">
-                    <option value="all">All</option>
-                    <option value="1">Member</option>
-                    <option value="2">Silver</option>
-                    <option value="3">Gold</option>
-                </select>
-            </div>
-        </section>
-
-        <!-- MEMBERS AREA -->
-
-        <section id="membersArea" class="members-grid" aria-live="polite" aria-label="Member directory">
-            <!-- JS injects cards here -->
+    
+        <!-- SPOTLIGHTS -->
+        <section class="card">
+            <h2>Spotlights</h2>
+            <div id="spotlights"></div>
         </section>
     </main>
 
@@ -138,13 +120,14 @@
             <p><a href="mailto:info@capetownchamber.com">info@capetownchamber.com</a> | (+27) 45-725-1326
             </p>
         </div>
-
+    
         <div class="social">
-            <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="../images/github.svg" alt="GitHub"></a>
+            <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="../images/github.svg"
+                    alt="GitHub"></a>
             <a href="https://www.linkedin.com/" target="_blank"><img src="../images/linkedin.svg" alt="LinkedIn"></a>
             <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.svg" alt="Instagram"></a>
         </div>
-
+    
         <div class="footer-meta">
             <p>&copy; <span id="year"></span> | Elizabeth Greeff | South Africa</p>
             <p id="lastModified"></p>

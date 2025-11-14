@@ -13,7 +13,7 @@
     --font-family: "Dosis", sans-serif;
     --radius: 10px;
     --gap: 1rem;
-    --max-width: 1100px;
+    --max-width: 1200px;
 }
 
 /* Reset + Base */
@@ -185,24 +185,6 @@ body {
     transform: scale(1.05);
 }
 
-/* --- Dashboard Layout --- */
-.dashboard {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr;
-  max-width: var(--max-width);
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.home {
-    text-align: left;
-    padding-left: 2rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
 /* ---------------- WEATHER & EVENTS ----------------*/
 
 
@@ -219,9 +201,7 @@ body {
     height: 64px;
 }
 
-.events-card,
-.weather-card,
-.forecast-card {
+.events-card, .weather-card, .forecast-card {
     background: var(--card-bg);
     margin: 15px;
     padding: 15px;
@@ -229,151 +209,76 @@ body {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.events-card h2,
-.weather-card h2,
-.forecast-card h2 {
+.events-card h2, .weather-card h2, .forecast-card h2 {
     background: var(--secondary-color);
     color: var(--text-color);
     padding: 8px;
     margin: -15px -15px 10px -15px;
     border-radius: 10px 10px 0 0;
 }
-/* ---------------- Controls ---------------- */
-.controls {
-    max-width: var(--max-width);
-    margin: 1.2rem auto;
-    padding: 0 1rem;
-    display: flex;
-    gap: .6rem;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
 
-.view-toggle .btn {
-    padding: .45rem .75rem;
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
-    background: #fff;
-    cursor: pointer;
-    color: var(--secondary-color);
-}
+/* ---------------- SPOTLIGHTS ---------------- */
 
-.view-toggle .btn.active {
-    background: var(--primary-color);
-    color: #fff;
-    border-color: var(--primary-color);
-}
-
-.filter select {
-    padding: .45rem .6rem;
-    border-radius: 6px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-/* ---------------- Members Grid ---------------- */
-.members-grid {
-    max-width: var(--max-width);
-    margin: 0 auto 2rem;
-    padding: 0 1rem;
-    display: grid;
-    gap: var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-/* ---------------- Member Card ---------------- */
-.member-card {
+.spotlight-card {
     background: var(--card-bg);
-    border-radius: var(--radius);
-    padding: .8rem;
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-    transition: transform .18s ease;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.member-card:hover {
-    transform: translateY(-4px);
+.spotlight-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
 }
 
-.member-card img {
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    border-radius: 8px;
-    flex-shrink: 0;
-    border: 1px solid rgba(0, 0, 0, 0.06);
+.spotlight {
+    background: var(--card-bg);
+    border-radius: 15px;
+    margin: 1rem 0;
 }
 
-.member-info {
-    flex: 1;
-    min-width: 0;
-    overflow-wrap: break-word;
-    word-break: break-word;
-}
-
-.member-info h3 {
-    margin: 0 0 .25rem;
-    font-size: 1rem;
+.spotlight-title {
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
     color: var(--primary-color);
 }
 
-.member-info .tag {
-    margin: 0 0 .4rem;
-    color: var(--secondary-color);
-    font-size: .9rem;
+.spotlight-tagline {
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    color: var(--text-color);
+    border-bottom: var(--primary-color) solid 1px;
 }
 
-.member-info p {
-    margin: .2rem 0;
-    font-size: .85rem;
+.spotlight-content {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1rem;
+    align-items: center;
 }
 
-.member-info a {
+.spotlight-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.spotlight-info p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+}
+
+.spotlight-info a {
     color: var(--primary-color);
     text-decoration: none;
-    word-break: break-all;
 }
 
-.member-meta {
-    margin-top: .4rem;
-    font-size: .8rem;
-    color: var(--secondary-color);
-}
-
-/* Badges */
-.badge {
-    display: inline-block;
-    padding: .2rem .45rem;
-    border-radius: 8px;
-    font-size: .75rem;
-    font-weight: 600;
-    color: #fff;
-}
-
-.badge-basic {
-    background: #8b8b8b;
-    color: #000000;
-}
-
-.badge-silver {
-    background: #7b9dd1;
-    color: #000000;
-}
-
-.badge-gold {
-    background: #caa43a;
-    color: #000000;
-}
-
-/* List View */
-.members-list {
-    display: block;
-}
-
-.members-list .member-card {
-    align-items: center;
+.spotlight-info a:hover {
+    text-decoration: underline;
 }
 
 /* ---------------- Footer ---------------- */
@@ -416,6 +321,6 @@ footer {
 }
 
 .social a:hover {
-    background-color: var(--primary-color);
-    border-radius: 30px;
+    border: solid 1px var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

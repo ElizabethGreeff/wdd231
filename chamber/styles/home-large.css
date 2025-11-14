@@ -1,7 +1,7 @@
 @media (min-width: 720px) { 
 
     /* ----- HEADER + NAVIGATION ----- */
-    
+
     .header-inner {
         display: grid;
         grid-template-columns: auto 1fr auto;
@@ -43,7 +43,11 @@
     .hamburger {
         display: none;
     }
-    
+
+    main>h1 {
+        grid-column: 1 / -1;
+    }
+
     .even-weather {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
@@ -63,8 +67,18 @@
         grid-column: span 1;
     }
 
-    .forecast card {
+    .forecast{
         grid-column: span 1;
+    }
+
+    #spotlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--gap);
+    }
+
+    .spotlight-card {
+        margin: 0;
     }
 
     footer {
