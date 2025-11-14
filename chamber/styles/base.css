@@ -6,7 +6,7 @@
 
 :root {
     --primary-color: #2E4A7D;
-    --secondary-color: #7e755f;
+    --secondary-color: #e2c885;
     --background-color: #F5F6FA;
     --text-color: #222;
     --card-bg: #fff;
@@ -256,7 +256,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.06);
     background: #fff;
     cursor: pointer;
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .view-toggle .btn.active {
@@ -321,7 +321,7 @@ body {
 
 .member-info .tag {
     margin: 0 0 .4rem;
-    color: var(--secondary-color);
+    color: var(--text-color);
     font-size: .9rem;
 }
 
@@ -339,7 +339,7 @@ body {
 .member-meta {
     margin-top: .4rem;
     font-size: .8rem;
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 /* Badges */
@@ -416,6 +416,6 @@ footer {
 }
 
 .social a:hover {
-    background-color: var(--primary-color);
-    border-radius: 30px;
+    border: solid 1px var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
