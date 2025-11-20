@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2E4A7D;
+    --secondary-color: #e2c885;
+    --background-color: #F5F6FA;
+    --text-color: #222;
+    --card-bg: #fff;
+    --font-family: "Dosis", sans-serif;
+    --radius: 10px;
+    --gap: 1rem;
+    --max-width: 1200px;
+}
+
+body {
+    font-family: var(--font-family);
+    background: var(--background-color);
+    color: var(--text-color);
+    padding-bottom: 4rem;
+}
+
+/* --- HEADER --- */
+.site-header {
+    background: var(--card-bg);
+    padding: 1rem 2rem;
+    color: var(--text-color);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title-group h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.title-group p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* --- MAIN CONTENT --- */
+.thankyou {
+    max-width: 600px;
+    margin: 3rem auto;
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.thankyou h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.8rem;
+}
+
+.thankyou>p {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.return-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: .8rem 1.4rem;
+    background: #2E4A7D;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.return-btn:hover {
+    background: #e2c885;
+    color: #222;
+}
+
+/* --- USER INFO CARD --- */
+.submitted-info {
+    text-align: left;
+    padding: 1.8rem;
+    background: var(--background-color);
+    border-radius: 14px;
+    border: 1px solid var(--secondary-color);
+}
+
+.submitted-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.submitted-info p {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+}
+
+.submitted-info strong {
+    color: var(--text-color);
+}
+
+/* --- Confetti styling --- */
+.confetti-piece {
+    position: fixed;
+    top: -10px;
+    background-color: hsl(var(--hue), 80%, 60%);
+    opacity: .9;
+    border-radius: 2px;
+    animation-name: fall;
+    animation-timing-function: linear;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(720deg);
+    }
+}
+
+/* random color hues */
+.confetti-piece:nth-child(odd) {
+    --hue: 45;
+}
+
+.confetti-piece:nth-child(even) {
+    --hue: 200;
+}
+
+.confetti-piece:nth-child(3n) {
+    --hue: 10;
+}
+
+.confetti-piece:nth-child(5n) {
+    --hue: 130;
+}

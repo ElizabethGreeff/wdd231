@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap" rel="stylesheet">
+
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cape Town Chamber | Join</title>
+    <meta name="description" content="Join page of Cape Town Chamber of Commerce members.">
+    <meta name="author" content="Elizabeth M. Greeff">
+    <link rel="icon" href="favicon.ico">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+
+    <!--scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <!--Social media tags-->
+    <meta property="og:title" content="Elizabeth M. Greeff | WDD231 Chamber Directory">
+    <meta property="og:description" content="Elizabeth Greeff's WDD231 Chamber of Commerce directory page.">
+    <meta property="og:image" content="images/hero-large.webp">
+    <meta property="og:url" content="https://elizabethgreeff.github.io/wdd231/chamber/directory.html">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+
+            <img src="images/mountain-logo.svg" alt="cape Town Chamber logo" class="site-logo" width="56" height="56">
+
+            <div class="title-group">
+                <h1 class="site-title">Cape Town Chamber</h1>
+                <p class="site-tag">Supporting local business</p>
+            </div>
+
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+
+            <button id="ham-btn" class="hamburger" aria-expanded="false" aria-label="Open navigation"></button>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="join-section">
+            <h2>Join the Chamber</h2>
+    
+            <div class="join-grid">
+    
+                <!-- ------------ FORM ------------ -->
+                <form method="get" action="thankyou.html" class="join-form">
+    
+                    <label>
+                        First Name *
+                        <input type="text" name="first" required autocomplete="given-name" title="Enter your first name">
+                    </label>
+    
+                    <label>
+                        Last Name *
+                        <input type="text" name="last" required autocomplete="family-name" title="Enter your last name">
+                    </label>
+    
+                    <label>
+                        Organizational Title
+                        <input type="text" name="orgtitle" title="Your title in the company"
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="Manager, Director...">
+                    </label>
+    
+                    <label>
+                        Email *
+                        <input type="email" name="email" required autocomplete="email" placeholder="example@company.com"
+                            title="Enter a valid email address">
+                    </label>
+    
+                    <label>
+                        Mobile Phone *
+                        <input type="tel" name="phone" required autocomplete="tel" title="Enter your mobile number">
+                    </label>
+    
+                    <label>
+                        Business / Organization Name *
+                        <input type="text" name="organization" required autocomplete="organization"
+                            title="Business or Organization name">
+                    </label>
+    
+                    <label>
+                        Membership Level *
+                        <select name="membership" required title="Choose a membership level">
+                            <option value="" disabled selected>Select a level</option>
+                            <option value="np">NP - Non Profit (Free)</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    </label>
+    
+                    <label>
+                        Business Description
+                        <textarea name="description" title="Describe your business"></textarea>
+                    </label>
+    
+                    <!-- Hidden Timestamp -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+    
+                    <input type="submit" value="Apply!" class="submit-btn">
+                </form>
+    
+                <!-- ------------ MEMBERSHIP CARDS ------------ -->
+                <div class="membership-cards">
+    
+                    <div class="card fade-in" id="np-card">
+                        <h3>NP Membership</h3>
+                        <p>Free membership for non-profit organizations.</p>
+                        <button data-modal="np-modal">View Benefits</button>
+                    </div>
+    
+                    <div class="card fade-in" id="bronze-card">
+                        <h3>Bronze</h3>
+                        <p>Entry-level membership with essential benefits.</p>
+                        <button data-modal="bronze-modal">View Benefits</button>
+                    </div>
+    
+                    <div class="card fade-in" id="silver-card">
+                        <h3>Silver</h3>
+                        <p>More visibility, event discounts, and training.</p>
+                        <button data-modal="silver-modal">View Benefits</button>
+                    </div>
+    
+                    <div class="card fade-in" id="gold-card">
+                        <h3>Gold</h3>
+                        <p>Premium benefits, spotlight ads, and more.</p>
+                        <button data-modal="gold-modal">View Benefits</button>
+                    </div>
+    
+                </div>
+            </div>
+        </section>
+    
+        <!-- ------------ MODALS ------------ -->
+    
+        <div class="modal" id="np-modal">
+            <div class="modal-box">
+                <h3>NP Membership Benefits</h3>
+                <ul>
+                    <li>Free membership</li>
+                    <li>Access to networking events</li>
+                    <li>Community outreach support</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+    
+        <div class="modal" id="bronze-modal">
+            <div class="modal-box">
+                <h3>Bronze Membership Benefits</h3>
+                <ul>
+                    <li>Business directory listing</li>
+                    <li>Standard training sessions</li>
+                    <li>Invitations to events</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+    
+        <div class="modal" id="silver-modal">
+            <div class="modal-box">
+                <h3>Silver Membership Benefits</h3>
+                <ul>
+                    <li>Enhanced directory listing</li>
+                    <li>Event discounts</li>
+                    <li>Quarterly advertising spotlight</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+    
+        <div class="modal" id="gold-modal">
+            <div class="modal-box">
+                <h3>Gold Membership Benefits</h3>
+                <ul>
+                    <li>Premium advertising</li>
+                    <li>Priority event access</li>
+                    <li>Exclusive networking dinners</li>
+                </ul>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+    
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Cape Town Chamber of Commerce</strong></p>
+            <p>V&A Waterfront, Cape Town</p>
+            <p><a href="mailto:info@capetownchamber.com">info@capetownchamber.com</a> | (+27) 45-725-1326
+            </p>
+        </div>
+    
+        <div class="social">
+            <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="../images/github.svg"
+                    alt="GitHub"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="../images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.svg" alt="Instagram"></a>
+        </div>
+    
+        <div class="footer-meta">
+            <p>&copy; <span id="year"></span> | Elizabeth Greeff | South Africa</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    </body>
+    
+</html>
