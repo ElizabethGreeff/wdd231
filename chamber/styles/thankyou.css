@@ -120,7 +120,6 @@ body {
     border-radius: 2px;
     animation-name: fall;
     animation-timing-function: linear;
-    pointer-events: none;
 }
 
 @keyframes fall {
