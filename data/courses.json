@@ -1,0 +1,58 @@
+{
+    "courses": [
+    
+        {"code": "CSEPC110",
+        "title": "Introduction to Programming",
+        "description": "An introductory course on the fundamentals of computer science.",
+        "credits": 2,
+        "certificate": "Web and Computer programming",
+        "completed": true,
+        "technology": "Python"
+        },
+        
+        {"code": "CSE111",
+        "title": "Programming with Functions",
+        "description": "A course focusing on functional programming concepts and techniques.",
+        "credits": 2,
+        "certificate": "Web and Computer programming",
+        "completed": true,
+        "technology": ["Python"]
+        },
+
+        {"code": "CSE210",
+        "title": "Programming with Classes",
+        "description": "An intermediate course on object-oriented programming using classes.",
+        "credits": 2,
+        "certificate": "Web and Computer programming",
+        "completed": true,
+        "technology": ["Csharp"]
+        },
+
+        {"code": "WDD130",
+        "title": "Web Fundamentals",
+        "description": "A foundational course on web development technologies and best practices.",
+        "credits": 2,
+        "certificate": "Web and Computer programming",
+        "completed": true,
+        "technology": ["HTML", "CSS"]
+        },
+
+        {"code": "WDD131",
+        "title": "Dynamic Web Fundamentals",
+        "description": "A course on creating dynamic and interactive web applications.",
+        "credits": 2,
+        "certificate": "Web and Computer programming",
+        "completed": true,
+        "technology": ["HTML", "CSS", "JavaScript"]
+        },
+
+        {"code": "WDD231",
+        "title": "Web frontend Development",
+        "description": "An advanced course on front-end web development using modern frameworks and tools.",
+        "credits": 2,
+        "certificate": "Web and Computer programming",
+        "completed": false,
+        "technology": ["HTML", "CSS", "JavaScript", "JSON"]
+        }
+    ]
+}

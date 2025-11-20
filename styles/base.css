@@ -169,6 +169,14 @@ main {
     border-radius: 6px;
     text-align: center;
     color: var(--text-color);
+    transition: 0.1s;
+}
+
+.course-card:hover {
+    transform: translateY(-2px);
+    background-color: var(--tertiary-color);
+    cursor: pointer;
+    outline: var(--secondary-color) solid 2px;
 }
 
 .course-card.completed {
@@ -176,6 +184,35 @@ main {
     color: white;
     text-decoration: line-through;
 }
+
+/*Dialog Styles*/
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
+dialog button:hover {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+}
+
 
 /*Footer Styles*/
 
