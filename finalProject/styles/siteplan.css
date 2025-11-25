@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #1A2A40;
+    --secondary-color: #D4A017;
+    --background-color: #F8F5E4;
+    --text-color: #111111;
+
+    --main-font: "Crimson Pro", serif;
+    --secondary-font: "Spectral SC", serif;
+}
+
+* {
+    font-size: 1.1rem;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+section {
+    padding: 1.5rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.color-swatch {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+    border-radius: 4px;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+}
+
+.neutral {
+    background-color: var(--background-color);
+    border: 1px solid #999;
+}
+
+.dark {
+    background-color: var(--text-color);
+}
+
+.wireframes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+figure {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
