@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+
+    <!--Meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cape Town Chamber Discover</title>
+    <meta name="description" content="Discover page of Cape Town Chamber of Commerce members.">
+    <meta name="author" content="Elizabeth M. Greeff">
+    <link rel="icon" href="favicon.ico">
+
+    <!--CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
+
+    <!--scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+
+    <!--Social media tags-->
+    <meta property="og:title" content="Elizabeth M. Greeff | WDD231 Chamber Discover">
+    <meta property="og:description" content="Elizabeth Greeff's WDD231 Chamber of Commerce discover page.">
+    <meta property="og:image" content="https://elizabethgreeff.github.io/wdd231/chamber/images/hero-large.webp">
+    <meta property="og:url" content="https://elizabethgreeff.github.io/wdd231/chamber/directory.html">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+
+            <img src="images/mountain-logo.svg" alt="cape Town Chamber logo" class="site-logo" width="56" height="56">
+
+            <div class="title-group">
+                <h1 class="site-title">Cape Town Chamber</h1>
+                <p class="site-tag">Supporting local business</p>
+            </div>
+
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li class="current"><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+
+            <button id="ham-btn" class="hamburger" aria-expanded="false" aria-label="Open navigation"></button>
+
+        </div>
+    </header>
+
+    <main class="discover-main">
+        <div id="visitMessage" class="visit-message" aria-live="polite"></div>
+    
+        <section class="discover-hero card">
+            <h2>Discover the Cape Town Area</h2>
+            <p>Local attractions, parks, museums, and coastal highlights — the best of our city for visitors and new
+                members.</p>
+        </section>
+    
+        <section id="placesGrid" class="places-grid" aria-label="Places of interest">
+        </section>
+
+        <div id="modalOverlay" class="modal-overlay">
+            <div class="modal">
+                <button class="modal-close" id="closeModal">&times;</button>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Cape Town Chamber of Commerce</strong></p>
+            <p>V&A Waterfront, Cape Town</p>
+            <p><a href="mailto:info@capetownchamber.com">info@capetownchamber.com</a> | (+27) 45-725-1326
+            </p>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="../images/github.svg"
+                    alt="GitHub"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img src="../images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.svg" alt="Instagram"></a>
+        </div>
+
+        <div class="footer-meta">
+            <p>&copy; <span id="year"></span> | Elizabeth Greeff | South Africa</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

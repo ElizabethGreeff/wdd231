@@ -1,0 +1,125 @@
+@media (min-width: 720px) {
+
+    /* ----- HEADER + NAVIGATION ----- */
+
+    .header-inner {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        gap: 1.5rem;
+    }
+
+    .site-logo {
+        grid-column: 1;
+    }
+
+    .title-group {
+        grid-column: 2;
+        text-align: left;
+        justify-self: center;
+    }
+
+    .navigation {
+        display: block;
+        grid-column: 3;
+        justify-self: end;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1.5rem;
+        margin: 0;
+    }
+
+    .navigation a {
+        padding: .5rem;
+        border-bottom: none;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+
+
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .discover-main {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+    }
+
+    
+    .places-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 1rem;
+    grid-template-areas:
+    "hero hero a b"
+    "hero hero c d"
+    "e f g h";
+    }
+
+    .place-card:nth-child(1) {
+    grid-area: hero;
+    }
+
+    .place-card:nth-child(2) {
+    grid-area: a;
+    }
+
+    .place-card:nth-child(3) {
+    grid-area: b;
+    }
+
+    .place-card:nth-child(4) {
+    grid-area: c;
+    }
+
+    .place-card:nth-child(5) {
+    grid-area: d;
+    }
+
+    .place-card:nth-child(6) {
+    grid-area: e;
+    }
+
+    .place-card:nth-child(7) {
+    grid-area: f;
+    }
+
+    .place-card:nth-child(8) {
+    grid-area: g;
+    }
+
+    /* remaining flows to h automatically */
+
+    /* styling adjustments for hero feature */
+    .places-grid .place-card {
+    border-radius: 12px;
+    }
+
+    .places-grid .place-card:nth-child(1) .place-content {
+    padding: 1.25rem;
+    }
+
+    .places-grid .place-card:nth-child(1) .place-title {
+    font-size: 1.4rem;
+    }
+
+    /* stronger hover image effect on large */
+    .place-card:hover .place-figure img {
+    transform: scale(1.08);
+    filter: brightness(.98) saturate(1.05);}
+}

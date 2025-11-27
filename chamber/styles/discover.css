@@ -1,0 +1,371 @@
+.dosis {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    --primary-color: #2E4A7D;
+    --secondary-color: #e2c885;
+    --background-color: #F5F6FA;
+    --text-color: #222;
+    --card-bg: #fff;
+    --font-family: "Dosis", sans-serif;
+    --radius: 10px;
+    --gap: 1rem;
+    --max-width: 1200px;
+}
+
+/* Reset + Base */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.45;
+}
+
+/* ---------------- Header ---------------- */
+.site-header {
+    background: var(--background-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    padding: .5rem 1rem;
+}
+
+.header-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.title-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+}
+
+.site-logo {
+    border-radius: 8px;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--primary-color);
+}
+
+.site-tag {
+    margin: 0;
+    font-size: .85rem;
+    color: var(--text-color);
+}
+
+/* ---------------- Navigation ---------------- */
+/*Hamburger*/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/*Navigation Styles*/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 0.8rem 10px;
+    border-bottom: solid 1px var(--text-color);
+}
+
+.navigation a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navigation li.current {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.navigation li.current a {
+    color: white;
+}
+
+/* page layout */
+.discover-main {
+    max-width: var(--max-width);
+    margin: 1rem auto;
+    padding: 0 1rem 3rem;
+    display: grid;
+    gap: var(--gap);
+}
+
+/* visit message */
+.visit-message {
+    background: linear-gradient(90deg, var(--secondary-color), var(--background-color));
+    border-radius: 8px;
+    padding: .75rem 1rem;
+    font-weight: 600;
+}
+
+/* hero */
+.card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.discover-hero h2 {
+    margin: .25rem 0
+}
+
+.discover-hero p {
+    margin: .4rem 0;
+    color: var(--text-color)
+}
+
+/*grid*/
+.places-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    margin-top: .5rem;
+}
+
+.place-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .6rem;
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.place-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.10);
+}
+
+.place-figure {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.place-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* content */
+.place-content {
+    padding: .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.place-title {
+    font-size: 1.1rem;
+    margin: 0;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.place-address {
+    font-size: .9rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.place-desc {
+    font-size: .95rem;
+    margin: .25rem 0;
+    color: var(--text-color);
+}
+
+/* buttons */
+.place-actions {
+    margin-top: .25rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: .5rem .75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn.secondary {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.place-card a.learn-more {
+    display: inline-block
+}
+
+/* ---------------------------
+   Modal Overlay
+---------------------------- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+/* Show modal */
+.modal-overlay.show {
+    display: flex;
+}
+
+/* ---------------------------
+   Modal Box
+---------------------------- */
+.modal {
+    background: #ffffff;
+    padding: 1.5rem;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    animation: fadeInUp 0.25s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Close Button */
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: none;
+    background: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #555;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+/* Modal Image */
+.modal-image {
+    width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+    max-width: var(--max-width);
+    margin: 0 auto 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: solid 1px var(--secondary-color);
+    font-size: 0.9rem;
+    color: var(--primary-color);
+}
+
+.footer-contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: solid 1px var(--secondary-color);
+    border-radius: 30px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    border: solid 1px var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
