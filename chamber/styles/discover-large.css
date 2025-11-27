@@ -44,8 +44,6 @@
         display: none;
     }
 
-
-
     footer {
         display: flex;
         flex-direction: row;
@@ -103,9 +101,6 @@
     grid-area: g;
     }
 
-    /* remaining flows to h automatically */
-
-    /* styling adjustments for hero feature */
     .places-grid .place-card {
     border-radius: 12px;
     }
@@ -118,8 +113,11 @@
     font-size: 1.4rem;
     }
 
-    /* stronger hover image effect on large */
-    .place-card:hover .place-figure img {
-    transform: scale(1.08);
-    filter: brightness(.98) saturate(1.05);}
+    .place-card {
+        transition: transform .18s ease;
+    }
+
+    .place-card:hover {
+        transform: translateY(-4px);
+    }
 }
