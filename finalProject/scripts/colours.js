@@ -21,7 +21,7 @@ const themes = {
         background: "#fff7e6",
         text: "#3d1f0c",
         primary: "#3d1f0c",
-        accent: "#a00000",
+        accent: "#e65656ff",
         accent2: "#c28800",
         lightText: "#ffffff"
     },
@@ -40,7 +40,7 @@ const themes = {
         text: "#1e1e1e",
         primary: "#093837",
         accent: "#d8b785",
-        accent2: "#f0e6bd",
+        accent2: "#4a752dff",
         lightText: "#ffffff"
     }
 };
@@ -67,4 +67,23 @@ document.querySelectorAll(".theme-btn").forEach(btn => {
 
 document.getElementById("default-theme-btn").addEventListener("click", () => {
     applyTheme("Default");
+});
+
+document.querySelectorAll('.theme-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.classList.add('animate');
+        setTimeout(() => btn.classList.remove('animate'), 700);
+    });
+});
+
+const swirl = document.getElementById('themeSwirl');
+const themeButtons = document.querySelectorAll('.theme-btn');
+
+themeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        swirl.style.background = btn.dataset.color;
+        swirl.classList.add('active');
+
+        setTimeout(() => swirl.classList.remove('active'), 600);
+    });
 });
