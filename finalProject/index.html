@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Mytho Magic</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Spectral+SC:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/home.css">
+        <link rel="stylesheet" href="styles/home-large.css" media="screen and (min-width:720px)">
+
+        <!-- Scripts -->
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/deity.js" defer></script>
+        <script src="scripts/colours.js" defer></script>  
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-inner">
+                <h1 class="logo">Mytho Magic</h1>
+
+                <button id="menu-btn" class="menu-btn" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <nav id="mobile-menu" class="mobile-menu hidden">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pantheons.html">Pantheons</a></li>
+                        <li><a href="creatures.html">Creatures</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pantheons.html">Pantheons</a></li>
+                        <li><a href="creatures.html">Creatures</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                        <button id="default-theme-btn" class="theme-reset">Reset Theme</button>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="hero">
+                <h1>Discover the worlds of myth</h1>
+                <p class="lead">Explore Greek, Roman, Norse and Egyptian myths. Take the quiz to find your pantheon.</p>
+                <a class="btn primary" href="quiz.html">Take the Quiz</a>
+            </section>
+
+            <section class="myth-map-section">
+                <div class="map-wrapper">
+                    <div class="map-container">
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com" width="500px" height="500px">
+                            <a href="creatures.html#greek-creatures">
+                                <path style="stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-linecap: round; fill: rgb(72, 45, 244);" d="M 71.581 -3.351 C 71.581 17.982 74.513 41.248 85.732 52.752 C 91.938 59.115 101.035 56.728 108.373 60.49 C 116.874 64.848 121.958 72.483 127.241 77.901 C 146.026 97.162 145.864 137.371 157.429 161.087 C 161.709 169.863 161.063 183.264 170.637 188.172 C 180.893 193.43 194.932 181.639 199.881 176.564 C 209.785 166.41 213.573 187.924 222.522 183.335 C 229.111 179.957 230.873 169.113 233.844 163.022 C 241.575 147.166 256.738 115.012 272.522 106.919 C 273.898 106.214 279.532 101.808 280.069 102.083 C 280.441 102.274 282.061 128.093 288.56 121.429 C 301.885 107.765 320.437 89.15 328.181 65.326 C 334.471 45.98 357.624 32.237 366.861 22.765 C 373.278 16.186 384.67 17.08 390.445 11.159 C 397.804 3.613 410.256 -3.967 410.256 -14.958" class="greece"/>
+
+                                <path style="stroke: rgb(0, 0, 0); fill: rgb(67, 43, 226);" d="M 281.028 143.163 C 277.758 149.997 261.157 173.122 268.76 178.419 C 272.274 180.867 275.663 173.611 276.428 173.077 C 281.951 169.229 282.08 159.86 285.629 154.915 C 287.458 152.366 289.718 146.368 285.629 146.368 C 283.46 146.368 281.028 148.062 281.028 149.573" class="greece"/>
+
+                                <path style="stroke: rgb(0, 0, 0); fill: rgb(53, 43, 226);" d="M 212.607 212.607 C 212.607 218.235 208.171 238.086 212.607 242.521 C 215.686 245.601 219.025 236.115 221.154 237.179 C 223.135 238.17 228.399 247.98 230.769 246.795 C 232.63 245.865 242.357 231.673 239.316 228.632 C 236.637 225.954 229.657 228.588 226.496 225.427 C 223.728 222.66 226.656 215.972 224.359 213.675 C 218.638 207.954 212.607 206.219 212.607 216.88" class="greece"/>
+
+                                <path style="stroke: rgb(0, 0, 0); fill: rgb(37, 42, 212);" d="M 252.137 202.991 C 252.137 213.436 256.918 210.978 261.752 215.812 C 264.718 218.778 262.468 225.075 264.957 227.564 C 267.815 230.422 270.968 221.553 271.367 221.154 C 274.891 217.63 264.691 193.777 261.752 192.308 C 256.118 189.491 251.068 194.376 251.068 198.718 C 251.068 201.272 252.137 206.469 252.137 207.265" class="greece"/>
+
+                                <path style="stroke: rgb(0, 0, 0); fill-rule: nonzero; fill: rgb(59, 44, 232);" d="M 247.863 261.752 C 247.863 275.357 249.648 300.917 261.752 276.709 C 268.721 262.771 246.795 238.294 246.795 266.026" class="greece"/>
+
+                                <path style="stroke: rgb(0, 0, 0); fill: rgb(58, 44, 231);" d="M 288.461 235.043 C 290.193 240.238 290.459 245.449 292.735 250 C 294.486 253.502 299.304 250.318 301.282 254.273 C 301.893 255.496 302.78 265.596 304.487 263.889 C 308.449 259.927 316.034 245.521 309.829 239.316 C 306.66 236.147 301.433 236.413 299.145 231.838 C 298.791 231.129 299.924 215.033 295.94 219.017 C 294.608 220.349 290.265 220.419 288.461 222.222 C 284.297 226.387 289.033 239.316 291.666 239.316" class="greece"/>
+                            </a>
+
+                            <a href="creatures.html#roman-creatures">
+                                <path style="stroke: rgb(0, 0, 0); stroke-linejoin: round; stroke-linecap: round; fill: rgb(168, 42, 42);" d="M 508.548 102.564 C 511.529 96.603 500.088 98.291 495.727 98.291 C 484.489 98.291 472.785 101.833 463.676 107.906 C 442.728 121.871 438.107 143.018 428.42 162.393 C 415.126 188.981 440.008 225.754 426.283 253.205 C 423.159 259.454 426.209 270.373 420.941 275.641 C 406.273 290.309 384.046 313.224 362.18 320.513 C 342.133 327.195 315.064 330.237 302.351 342.949 C 299.057 346.243 303.539 355.531 301.283 360.043 C 297.664 367.281 298.994 390.721 302.351 397.436 C 303.892 400.517 302.037 407.805 304.488 410.256 C 316.762 422.53 348.406 398.619 363.249 413.462 C 372.628 422.841 382.885 430.961 392.095 440.171 C 401.423 449.499 405.69 468.724 415.599 478.632 C 425.717 488.75 447.413 483.974 461.539 483.974 C 465.997 483.974 477.229 482.57 479.702 485.043 C 482.583 487.924 501.036 505.342 506.411 505.342" class="rome"/>
+                            </a>
+
+                            <a href="creatures.html#egyptian-creatures">
+                                <path style="stroke: rgb(0, 0, 0); fill: rgb(192, 160, 97);" d="M -7.479 504.274 C -7.479 493.326 -11.752 475.526 -11.752 460.47 C -11.752 458.087 -13.269 447.03 -11.752 445.513 C -7.728 441.489 -7.479 412.846 -7.479 405.983 C -7.479 403.645 -3.205 400.499 -3.205 399.573 C -0.178 390.49 16.92 375.621 24.573 371.795 C 32.453 367.855 44.998 358.849 50.214 353.633 C 54.056 349.791 63.025 351.505 67.308 347.222 C 72.332 342.198 101.676 346.334 104.701 349.359 C 109.797 354.456 120.193 361.379 128.205 365.385 C 136.783 369.674 141.98 384.024 149.573 387.821 C 166.051 396.06 176.883 409.489 191.239 416.667 C 210.35 426.222 233.057 402.853 252.137 412.393 C 267.437 420.044 275.598 430.534 288.461 436.966 C 301.232 443.351 303.549 457.33 314.102 462.607 C 320.713 465.912 335.931 450.394 338.675 447.65 C 341.999 444.326 355.466 449.484 356.838 450.855 C 363.61 457.628 367.08 467.508 375 475.428 C 382.22 482.647 391.441 486.527 397.436 492.522 C 401.278 496.363 415.598 500.6 415.598 505.342" class="egypt"/>
+                            </a>
+
+                            <a href="creatures.html#norse-creatures">
+                                <path style="stroke: rgb(0, 0, 0); fill: rgb(67, 97, 59);" d="M -4.968 55.556 C 28.596 55.556 46.482 74.34 59.077 98.291 C 66.825 113.028 56.47 142.821 69.188 154.915 C 77.487 162.805 92.498 140.754 102.895 150.641 C 117.607 164.63 119.609 194.176 129.861 213.675 C 136.587 226.466 140.748 241.857 147.839 255.342 C 150.912 261.186 151.314 271.468 155.704 275.641 C 156.712 276.599 161.983 291.038 161.322 291.667 C 149.873 302.553 138.739 284.135 129.861 279.915 C 125.183 277.69 120.347 269.799 117.502 267.094 C 111.013 260.924 94.109 274.381 91.659 276.709 C 72.836 294.608 68.001 322.146 39.975 335.47 C 31.324 339.583 10.361 344.895 -0.473 339.744 C -3.058 338.515 -16.004 335.281 -11.709 331.197" class="scandanavia"/>
+                            </a>
+
+                            <text x="200" y="100" class="map-label">GREECE</text>
+                            <text x="400" y="370" class="map-label">ROME</text>
+                            <text x="180" y="450" class="map-label">EGYPT</text>
+                            <text x="70" y="240" class="map-label">SCANDINAVIA</text>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="pantheons">
+                <h2 class="section-title">Pantheons</h2>
+                <div class="cards">
+                    <section class="card-wrapper">
+                        <img class="card-bg" src="images/greek_bg.webp" alt="Greek Waves">
+
+                        <article class="card">
+                            <h3>Greek Pantheon</h3>
+                            <p>From Zeus to Athena — a pantheon of heroes, monsters and quests.</p>
+                            <button class="theme-btn" data-theme="Greek">Try Greek Theme</button>
+                            <a href="creatures.html" class="creatures-btn">Find more creatures...</a>
+                        </article>
+                    </section>
+
+                    <section class="card-wrapper">
+                        <img class="card-bg" src="images/roman_bg.webp" alt="Roman columns">
+
+                        <article class="card">
+                            <h3>Roman Pantheon</h3>
+                            <p>Roman names, Roman myths — familiar yet distinct.</p>
+                            <button class="theme-btn" data-theme="Roman">Try Roman Theme</button>
+                            <a href="creatures.html" class="creatures-btn">Find more creatures...</a>
+                        </article>
+
+                    </section>
+
+                    <section class="card-wrapper">
+                        <img class="card-bg" src="images/egyptian_bg.webp" alt="Hyroglifics">
+
+                        <article class="card">                            
+                            <h3>Egyptian Pantheon</h3>
+                            <p>Sands of time and gods of the Nile.</p>
+                            <button class="theme-btn" data-theme="Egyptian">Try Egyptian Theme</button>
+                            <a href="creatures.html" class="creatures-btn">Find more creatures...</a>
+                        </article>
+                    </section>
+
+                    <section class="card-wrapper">
+                        <img class="card-bg" src="images/nordic_bg.webp" alt="Nordic Knots">
+
+                        <article class="card">                            
+                            <h3>Norse Pantheon</h3>
+                            <p>Storms, sagas and the deep north.</p>
+                            <button class="theme-btn" data-theme="Norse">Try Norse Theme</button>
+                            <a href="creatures.html" class="creatures-btn">Find more creatures...</a>
+                        </article>
+                    </section>
+                </div>
+            </section>
+
+            <section class="deity-wrapper">
+                <div class="deity-bg" id="deityBg"></div>
+
+                <div class="deity-content" id="deityCard">
+                    <h2 id="deityName"></h2>
+                    <p id="deityPantheon"></p>
+                    <p id="deityBio"></p>
+
+                    <a href="pantheons.html" class="deity-btn">Explore Pantheons</a>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+                <div class="footer-social">
+                    <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="../images/github.svg"
+                    alt="GitHub"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="../images/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.svg" alt="Instagram"></a>
+                </div>
+
+                <p>&copy; <span id="year"></span> | Elizabeth Greeff | South Africa</p>
+                <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

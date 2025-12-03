@@ -1,0 +1,41 @@
+[
+  {"name":"Zeus",
+  "pantheon":"Greek",
+  "short":"King of the Greek gods — lord of the sky, thunder and law.",
+  "img": "images/zeus.webp"},
+
+  {"name":"Athena",
+  "pantheon":"Greek",
+  "short":"Goddess of wisdom, craft and strategic war.",
+  "img": "images/athena.webp"},
+
+  {"name":"Ra",
+  "pantheon":"Egyptian",
+  "short":"Solar deity of creation and kingship, guardian of the sun.",
+  "img": "images/ra.webp"},
+
+  {"name":"Isis",
+  "pantheon":"Egyptian",
+  "short":"Goddess of magic, motherhood and healing.",
+  "img": "images/isis.webp"},
+
+  {"name":"Odin",
+  "pantheon":"Norse",
+  "short":"Allfather — seeker of wisdom and battle-scarred ruler.",
+  "img": "images/odin.webp"},
+
+  {"name":"Thor",
+  "pantheon":"Norse",
+  "short":"God of thunder, protector of Midgard, mighty in storms.",
+  "img": "images/thor.webp"},
+
+  {"name":"Jupiter",
+  "pantheon":"Roman",
+  "short":"Roman counterpart to Zeus, ruler of gods and thunder.",
+  "img": "images/jupiter.webp"},
+
+  {"name":"Venus",
+  "pantheon":"Roman",
+  "short":"Goddess of love, beauty and desire in Roman mythos.",
+  "img": "images/mars.webp"}
+]
