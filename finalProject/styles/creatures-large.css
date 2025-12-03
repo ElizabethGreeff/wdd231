@@ -1,0 +1,42 @@
+@media (min-width:720px) {
+    .menu-btn {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+
+    .desktop-nav ul {
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .desktop-nav a {
+        font-family: var(--font-body);
+        text-decoration: none;
+        color: var(--primary);
+        font-size: 1.1rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        transition: 0.2s;
+    }
+
+    .desktop-nav a:hover {
+        background: var(--accent);
+        color: var(--light-text);
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .site-logo {
+        font-size: 1.25rem;
+    }
+}

@@ -17,9 +17,16 @@
 
         <!-- Scripts -->
         <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/creatures.js" defer></script>
+        <script src="scripts/godcard.js" defer></script>
     </head>
 
     <body>
+        <div id="god-modal" class="god-modal-overlay">
+            <div class="god-card-modal"></div>
+        </div>
+        
+        <div id="godcard-btn" class="godcard-floating-btn"></div>
         <header class="site-header">
             <div class="header-inner">
                 <h1 class="logo">Mytho Magic</h1>
@@ -52,7 +59,15 @@
         </header>
 
         <main>
+            <div class="filter-bar">
+                <button data-filter="all" class="filter-btn active">All</button>
+                <button data-filter="greece" class="filter-btn">Greek</button>
+                <button data-filter="rome" class="filter-btn">Roman</button>
+                <button data-filter="egypt" class="filter-btn">Egyptian</button>
+                <button data-filter="norse" class="filter-btn">Norse</button>
+            </div>
 
+            <section id="creature-grid" class="creature-grid"></section>
         </main>
 
         <footer class="site-footer">

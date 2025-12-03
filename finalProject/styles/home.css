@@ -145,6 +145,87 @@ button, .deity-btn, .card {
     background: var(--accent);
 }
 
+/* ===== GOD CARD MODAL ===== */
+
+.god-modal-overlay {
+    position: fixed;
+    inset: 0;
+    backdrop-filter: blur(6px) brightness(0.4);
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+    opacity: 0;
+    transition: opacity .4s ease;
+}
+
+.god-modal-overlay.show {
+    display: flex;
+    opacity: 1;
+}
+
+.god-card-modal {
+    background: var(--neutral);
+    border-radius: 18px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transform: scale(0.6) translateY(40px);
+    opacity: 0;
+    transition: all .5s cubic-bezier(.22, 1.28, .36, 1);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3), 0 0 80px rgba(255, 255, 255, 0.1);
+}
+
+.god-modal-overlay.show .god-card-modal {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.god-card-modal img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.god-card-modal h2 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.god-card-modal p {
+    font-size: 1rem;
+    margin: 4px 0 10px;
+}
+
+/* ===== FLOATING BUTTON ===== */
+
+.godcard-floating-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 9999;
+    background: var(--background);
+    padding: 10px;
+    border-radius: 14px;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.godcard-floating-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+.godcard-floating-btn img {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
 /* Main layout */
 .container{
     max-width: 900px;
@@ -247,7 +328,7 @@ button, .deity-btn, .card {
 }
 
 /* Norse glow */
-.scandanavia:hover {
+.norse:hover {
     filter: drop-shadow(0 0 14px rgba(95, 150, 95, 0.9));
     transform: scale(1.01);
 }
@@ -288,7 +369,7 @@ button, .deity-btn, .card {
     transform: translate(35%, 92%);
 }
 
-.scandanavia-label {
+.norse-label {
     transform: translate(1%, 48%);
 }
 

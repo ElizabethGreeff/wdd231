@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Mytho Magic</title>
+
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,400&family=Spectral+SC:wght@300;400;700&display=swap"
+            rel="stylesheet">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles/quiz.css">
+        <link rel="stylesheet" href="styles/quiz-large.css" media="screen and (min-width:720px)">
+
+        <!-- Scripts -->
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/quiz.js" defer></script>
+        <script src="scripts/godcard.js" defer></script>
+    </head>
+
+    <body>
+        <div id="god-modal" class="god-modal-overlay">
+            <div class="god-card-modal"></div>
+        </div>
+        
+        <div id="godcard-btn" class="godcard-floating-btn"></div>
+        <header class="site-header">
+            <div class="header-inner">
+                <h1 class="logo">Mytho Magic</h1>
+    
+                <button id="menu-btn" class="menu-btn" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+    
+                <nav id="mobile-menu" class="mobile-menu hidden">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pantheons.html">Pantheons</a></li>
+                        <li><a href="creatures.html">Creatures</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </nav>
+    
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pantheons.html">Pantheons</a></li>
+                        <li><a href="creatures.html">Creatures</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="quiz-container">
+                <h2>Discover Your Patron God</h2>
+            
+                <form id="quiz-form">
+                    <!-- QUESTION 1 -->
+                    <div class="question">
+                        <h3>1. What power would you want?</h3>
+                        <label><input type="radio" name="q1" value="greece"> Control the seas</label>
+                        <label><input type="radio" name="q1" value="egypt"> Command the dead</label>
+                        <label><input type="radio" name="q1" value="norse"> Strength of giants</label>
+                        <label><input type="radio" name="q1" value="rome"> Divine lightning</label>
+                    </div>
+            
+                    <!-- QUESTION 2 -->
+                    <div class="question">
+                        <h3>2. Choose a weapon:</h3>
+                        <label><input type="radio" name="q2" value="egypt"> Staff</label>
+                        <label><input type="radio" name="q2" value="norse"> Axe</label>
+                        <label><input type="radio" name="q2" value="greece"> Trident</label>
+                        <label><input type="radio" name="q2" value="rome"> Gladius</label>
+                    </div>
+            
+                    <!-- QUESTION 3 -->
+                    <div class="question">
+                        <h3>3. Where do you feel strongest?</h3>
+                        <label><input type="radio" name="q3" value="norse"> Frozen mountains</label>
+                        <label><input type="radio" name="q3" value="greece"> Stormy seas</label>
+                        <label><input type="radio" name="q3" value="egypt"> Ancient deserts</label>
+                        <label><input type="radio" name="q3" value="rome"> Grand cities</label>
+                    </div>
+            
+                    <!-- QUESTION 4 -->
+                    <div class="question">
+                        <h3>4. Pick an animal companion:</h3>
+                        <label><input type="radio" name="q4" value="rome"> Eagle</label>
+                        <label><input type="radio" name="q4" value="greece"> Dolphin</label>
+                        <label><input type="radio" name="q4" value="egypt"> Jackal</label>
+                        <label><input type="radio" name="q4" value="norse"> Wolf</label>
+                    </div>
+            
+                    <!-- QUESTION 5 -->
+                    <div class="question">
+                        <h3>5. Choose your battlefield:</h3>
+                        <label><input type="radio" name="q5" value="egypt"> Tombs & ruins</label>
+                        <label><input type="radio" name="q5" value="greece"> Islands & seas</label>
+                        <label><input type="radio" name="q5" value="rome"> Sunlit plains</label>
+                        <label><input type="radio" name="q5" value="norse"> Dark forests</label>
+                    </div>
+            
+                    <button type="submit" class="submit-btn">Get My God</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-social">
+                <a href="https://github.com/ElizabethGreeff/wdd231" target="_blank"><img src="../images/github.svg"
+                        alt="GitHub"></a>
+                <a href="https://www.linkedin.com/" target="_blank"><img src="../images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../images/instagram.svg" alt="Instagram"></a>
+            </div>
+        
+            <p>&copy; <span id="year"></span> | Elizabeth Greeff | South Africa</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+    
+</html>

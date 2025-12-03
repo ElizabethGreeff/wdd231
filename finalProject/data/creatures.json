@@ -1,0 +1,290 @@
+{
+    "greece": [
+        {
+            "name": "Minotaur",
+            "image": "images/minotour.webp",
+            "damage": 85,
+            "health": 120,
+            "powers": [
+                "Labyrinth Rage",
+                "Brute Force"
+            ],
+            "weaknesses": [
+                "Light Magic",
+                "Agility Heroes"
+            ]
+        },
+        {
+            "name": "Hydra",
+            "image": "images/hydra.webp",
+            "damage": 70,
+            "health": 200,
+            "powers": [
+                "Regeneration",
+                "Poison Spit"
+            ],
+            "weaknesses": [
+                "Fire",
+                "Decapitation"
+            ]
+        },
+        {
+            "name": "Medusa",
+            "image": "images/medusa.webp",
+            "damage": 65,
+            "health": 90,
+            "powers": [
+                "Petrify",
+                "Venomous Hair"
+            ],
+            "weaknesses": [
+                "Mirrors",
+                "Blind Attacks"
+            ]
+        },
+        {
+            "name": "Cerberus",
+            "image": "images/cerberus.webp",
+            "damage": 95,
+            "health": 180,
+            "powers": [
+                "Infernal Bite",
+                "Hellfire"
+            ],
+            "weaknesses": [
+                "Divine Light",
+                "Water"
+            ]
+        },
+        {
+            "name": "Cyclops",
+            "image": "images/cyclops.webp",
+            "damage": 80,
+            "health": 130,
+            "powers": [
+                "Boulder Toss",
+                "Roar"
+            ],
+            "weaknesses": [
+                "Speed",
+                "Stealth"
+            ]
+        }
+    ],
+    "rome": [
+        {
+            "name": "Basilisk",
+            "image": "images/basilisk.webp",
+            "damage": 75,
+            "health": 110,
+            "powers": [
+                "Death Stare",
+                "Toxic Bite"
+            ],
+            "weaknesses": [
+                "Loud Noises",
+                "Mirrors"
+            ]
+        },
+        {
+            "name": "Lamia",
+            "image": "images/lamia.webp",
+            "damage": 68,
+            "health": 92,
+            "powers": [
+                "Draining Kiss",
+                "Shadow Cloak"
+            ],
+            "weaknesses": [
+                "Pure Silver",
+                "Sunlight"
+            ]
+        },
+        {
+            "name": "Faun",
+            "image": "images/faun.webp",
+            "damage": 40,
+            "health": 60,
+            "powers": [
+                "Nature Hymn",
+                "Trickster Illusions"
+            ],
+            "weaknesses": [
+                "Iron",
+                "Loud Clatter"
+            ]
+        },
+        {
+            "name": "Cacus",
+            "image": "images/cacus.webp",
+            "damage": 110,
+            "health": 160,
+            "powers": [
+                "Infernal Strength",
+                "Smoke Manipulation"
+            ],
+            "weaknesses": [
+                "Herculean Might",
+                "Fresh Air"
+            ]
+        },
+        {
+            "name": "Nymph",
+            "image": "images/nymph.webp",
+            "damage": 30,
+            "health": 50,
+            "powers": [
+                "Healing",
+                "Nature Manipulation"
+            ],
+            "weaknesses": [
+                "Fire",
+                "Pollution"
+            ]
+        }
+    ],
+    "egypt": [
+        {
+            "name": "Anubite",
+            "image": "images/anubite.webp",
+            "damage": 90,
+            "health": 150,
+            "powers": [
+                "Soul Slice",
+                "Sand Cloak"
+            ],
+            "weaknesses": [
+                "Holy Water",
+                "Binding Spells"
+            ]
+        },
+        {
+            "name": "Sphinx",
+            "image": "images/sphinx.webp",
+            "damage": 70,
+            "health": 140,
+            "powers": [
+                "Riddle Trap",
+                "Wing Gust"
+            ],
+            "weaknesses": [
+                "Ignore the Riddle",
+                "Earth Magic"
+            ]
+        },
+        {
+            "name": "Scarab Swarm",
+            "image": "images/scarab.webp",
+            "damage": 60,
+            "health": 45,
+            "powers": [
+                "Devour",
+                "Swarm Form"
+            ],
+            "weaknesses": [
+                "Fire",
+                "Cold"
+            ]
+        },
+        {
+            "name": "Apep Serpent",
+            "image": "images/apep.webp",
+            "damage": 100,
+            "health": 220,
+            "powers": [
+                "Chaos Storm",
+                "Corruption Bite"
+            ],
+            "weaknesses": [
+                "Ra’s Light",
+                "Order Magic"
+            ]
+        },
+        {
+            "name": "Ushabti",
+            "image": "images/ushabti.webp",
+            "damage": 55,
+            "health": 100,
+            "powers": [
+                "Stone Strength",
+                "Guardian Curse"
+            ],
+            "weaknesses": [
+                "Vibration",
+                "Precision Strikes"
+            ]
+        }
+    ],
+    "norse": [
+        {
+            "name": "Fenrir",
+            "image": "images/fenrir.webp",
+            "damage": 110,
+            "health": 200,
+            "powers": [
+                "World-End Bite",
+                "Shadow Leap"
+            ],
+            "weaknesses": [
+                "Binding Ropes",
+                "Odinnic Magic"
+            ]
+        },
+        {
+            "name": "Jörmungandr",
+            "image": "images/jormungandr.webp",
+            "damage": 120,
+            "health": 250,
+            "powers": [
+                "Toxic Sea Mist",
+                "World Coil"
+            ],
+            "weaknesses": [
+                "Thunder",
+                "Extreme Cold"
+            ]
+        },
+        {
+            "name": "Valkyrie",
+            "image": "images/valkyrie.webp",
+            "damage": 75,
+            "health": 120,
+            "powers": [
+                "Battle Blessing",
+                "Sky Strike"
+            ],
+            "weaknesses": [
+                "Soul Drain",
+                "Trickster Magic"
+            ]
+        },
+        {
+            "name": "Troll",
+            "image": "images/troll.webp",
+            "damage": 60,
+            "health": 140,
+            "powers": [
+                "Regeneration",
+                "Rock Throw"
+            ],
+            "weaknesses": [
+                "Sunlight",
+                "Fire"
+            ]
+        },
+        {
+            "name": "Draugr",
+            "image": "images/draugr.webp",
+            "damage": 80,
+            "health": 110,
+            "powers": [
+                "Undead Strength",
+                "Fear Aura"
+            ],
+            "weaknesses": [
+                "Holy Runes",
+                "Silver"
+            ]
+        }
+    ]
+}
