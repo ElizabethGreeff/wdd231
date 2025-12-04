@@ -140,51 +140,55 @@ body {
     transition: 0.3s;
 }
 
-/* Quiz  */
+/* Stories */
 
-.quiz-container {
-    max-width: 650px;
-    margin: 2rem auto;
-    background: var(--light);
+body {
+    z-index: 2;
+}
+
+.section  {
     padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-}
-
-h2 {
-    font-family: var(--heading-font);
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.question {
-    margin-bottom: 1.5rem;
-}
-
-label {
-    display: block;
-    padding: .4rem;
-    cursor: pointer;
-}
-
-.submit-btn {
-    background: var(--primary);
-    color: white;
-    padding: .8rem 1.4rem;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 1rem;
-}
-
-.submit-btn:hover {
-    background: var(--accent);
+    max-width: 900px;
+    margin: auto;
+    position: relative;
 }
 
 
+.section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
 
+
+.section p {
+    padding: 0.4rem;
+}
+
+.pantheon {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    border-left: 4px solid var(--accent);
+}
+
+.greece {
+    border-left: 4px solid #1a73e8;
+}
+
+.rome {
+    border-left: 4px solid #e65656ff;
+}
+
+.egypt {
+    border-left: 4px solid #cfa93e;
+}
+
+.norse {
+    border-left: 4px solid #4a752dff;
+}
 
 /* Footer */
 .site-footer {

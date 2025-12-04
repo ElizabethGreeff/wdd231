@@ -28,7 +28,7 @@
     }
 
     .desktop-nav a:hover {
-        background: var(--accent);
+        background: var(--accent2);
         color: var(--light-text);
     }
 

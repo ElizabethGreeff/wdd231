@@ -1,9 +1,21 @@
+.crimson-pro {
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.spectral-sc-regular {
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
     --background: #F8F5E4;
     --text: #111111;
     --primary: #1A2A40;
     --accent: #D4A017;
-    --accent2: #976508;
+    --accent2: #96640d;
     --light-text: #ffffff;
 
     --neutral: #F0EAD6;
@@ -31,7 +43,7 @@ body {
 }
 
 button, .deity-btn, .card {
-    transition: var(--background) 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+    transition: background 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
 
 /* Header */
@@ -131,101 +143,6 @@ button, .deity-btn, .card {
     transition: 0.3s;
 }
 
-.theme-reset {
-    padding: .5rem 1rem;
-    border-radius: 8px;
-    background: var(--accent2);
-    color: var(--light-text);
-    border: none;
-    cursor: pointer;
-    margin-left: 1rem;
-}
-
-.theme-reset:hover {
-    background: var(--accent);
-}
-
-/* ===== GOD CARD MODAL ===== */
-
-.god-modal-overlay {
-    position: fixed;
-    inset: 0;
-    backdrop-filter: blur(6px) brightness(0.4);
-    background: rgba(0, 0, 0, 0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9998;
-    opacity: 0;
-    transition: opacity .4s ease;
-}
-
-.god-modal-overlay.show {
-    display: flex;
-    opacity: 1;
-}
-
-.god-card-modal {
-    background: var(--neutral);
-    border-radius: 18px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    transform: scale(0.6) translateY(40px);
-    opacity: 0;
-    transition: all .5s cubic-bezier(.22, 1.28, .36, 1);
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3), 0 0 80px rgba(255, 255, 255, 0.1);
-}
-
-.god-modal-overlay.show .god-card-modal {
-    transform: scale(1) translateY(0);
-    opacity: 1;
-}
-
-.god-card-modal img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 12px;
-}
-
-.god-card-modal h2 {
-    margin: 0;
-    font-size: 1.8rem;
-}
-
-.god-card-modal p {
-    font-size: 1rem;
-    margin: 4px 0 10px;
-}
-
-/* ===== FLOATING BUTTON ===== */
-
-.godcard-floating-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 9999;
-    background: var(--background);
-    padding: 10px;
-    border-radius: 14px;
-    display: none;
-    cursor: pointer;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
-    transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.godcard-floating-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
-}
-
-.godcard-floating-btn img {
-    width: 55px;
-    height: 55px;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
 /* Main layout */
 .container{
     max-width: 900px;
@@ -266,7 +183,7 @@ button, .deity-btn, .card {
 }
 
 .btn.primary:hover {
-    background: var(--secondary);
+    background: var(--accent2);
     color: var(--background);
 }
 
@@ -292,20 +209,14 @@ button, .deity-btn, .card {
 
 .map-container svg path {
     cursor: pointer;
-    transition: 
-        fill 0.3s ease,
-        filter 0.3s ease,
-        transform 0.3s ease;
+    transition: fill 0.3s ease, filter 0.3s ease, transform 0.3s ease;
     opacity: 0.7;
 }
 
 .map-label {
     font-family: var(--heading-font);
     font-size: 1rem;
-    fill: var(--text);
     font-weight: 700;
-    text-anchor: middle;
-    pointer-events: none;
     opacity: 0.9;
 }
 
@@ -333,28 +244,9 @@ button, .deity-btn, .card {
     transform: scale(1.01);
 }
 
-.map-container svg path:hover {
-    opacity: 1;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
-}
-
-.tooltip {
-    position: absolute;
-    padding: 4px 8px;
-    background: var(--neutral);
-    border: 1px solid var(--secondary);
-    border-radius: 6px;
-    font-family: var(--body-font);
-    font-size: .8rem;
-    pointer-events: none;
-    display: none;
-}
-
 .label-group {
     font-family: var(--heading-font);
     font-weight: 700;
-    fill: var(--text);
-    pointer-events: none;
 }
 
 .greece-label {
@@ -371,6 +263,10 @@ button, .deity-btn, .card {
 
 .norse-label {
     transform: translate(1%, 48%);
+}
+
+text {
+    pointer-events: none;
 }
 
 /* Pantheons cards */
@@ -397,23 +293,31 @@ button, .deity-btn, .card {
     border-radius: 10px;
     box-shadow: 0 6px 18px rgba(0,0,0,.04);
     position: relative;
-    z-index: 2;
+    z-index: 3;
     backdrop-filter: blur(7px);
     border-radius: var(--radius);
-    padding: 1rem;
 }
 
 .card-wrapper {
     position: relative;
+    max-height: 200px;
+}
+
+.card-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2));
+    z-index: 2;
+    border-radius: var(--radius);
 }
 
 .card-bg {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     z-index: 1;
     border-radius: var(--radius);
 }
@@ -431,62 +335,10 @@ button, .deity-btn, .card {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.creature-btn:hover, .theme-btn:hover {
+.creature-btn:hover {
     background: var(--accent2);
     transform: translateY(-2px) scale(1.03);
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
-}
-
-.theme-btn {
-    padding: .6rem 1rem;
-    background: var(--accent);
-    color: var(--text);
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-family: var(--body-font);
-    transition: 0.25s ease
-}
-
-
-@keyframes themePulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 var(--accent);
-    }
-
-    70% {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px 10px transparent;
-    }
-
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 transparent;
-    }
-}
-
-.theme-btn.animate {
-    animation: themePulse 0.7s ease-out;
-}
-
-#themeSwirl {
-    position: fixed;
-    inset: 0;
-    background: var(--accent);
-    opacity: 0;
-    pointer-events: none;
-    mix-blend-mode: screen;
-    transform: scale(0);
-    border-radius: 50%;
-    z-index: 999;
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-#themeSwirl.active {
-    opacity: 0.6;
-    transform: scale(3);
 }
 
 /* Deity card */
@@ -534,7 +386,7 @@ button, .deity-btn, .card {
     display: inline-block;
     margin-top: 1rem;
     padding: .7rem 1.3rem;
-    background: var(--accent);
+    background: var(--primary);
     color: var(--light-text);
     border-radius: 10px;
     font-weight: 600;

@@ -1,9 +1,21 @@
+.crimson-pro {
+    font-family: "Crimson Pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.spectral-sc-regular {
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
     --background: #F8F5E4;
     --text: #111111;
     --primary: #1A2A40;
     --accent: #D4A017;
-    --accent2: #976508;
+    --accent2: #96640d;
     --light-text: #ffffff;
 
     --neutral: #F0EAD6;
@@ -29,12 +41,6 @@ body {
     background: var(--background);
     color: var(--text);
     transition: background .4s ease, color .4s ease;
-}
-
-button,
-.deity-btn,
-.card {
-    transition: var(--background) 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
 }
 
 /* Header */
@@ -111,7 +117,7 @@ button,
 }
 
 .mobile-menu a:hover {
-    background: var(--accent);
+    background: var(--accent2);
 }
 
 .hidden {
@@ -134,20 +140,6 @@ button,
     transition: 0.3s;
 }
 
-.theme-reset {
-    padding: .5rem 1rem;
-    border-radius: 8px;
-    background: var(--accent2);
-    color: var(--light-text);
-    border: none;
-    cursor: pointer;
-    margin-left: 1rem;
-}
-
-.theme-reset:hover {
-    background: var(--accent);
-}
-
 .filter-bar {
     display: flex;
     gap: 1rem;
@@ -167,86 +159,7 @@ button,
 
 .filter-btn.active,
 .filter-btn:hover {
-    background: var(--accent);
-}
-
-/* ===== GOD CARD MODAL ===== */
-
-.god-modal-overlay {
-    position: fixed;
-    inset: 0;
-    backdrop-filter: blur(6px) brightness(0.4);
-    background: rgba(0, 0, 0, 0.6);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9998;
-    opacity: 0;
-    transition: opacity .4s ease;
-}
-
-.god-modal-overlay.show {
-    display: flex;
-    opacity: 1;
-}
-
-.god-card-modal {
-    background: var(--neutral);
-    border-radius: 18px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    transform: scale(0.6) translateY(40px);
-    opacity: 0;
-    transition: all .5s cubic-bezier(.22, 1.28, .36, 1);
-    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3), 0 0 80px rgba(255, 255, 255, 0.1);
-}
-
-.god-modal-overlay.show .god-card-modal {
-    transform: scale(1) translateY(0);
-    opacity: 1;
-}
-
-.god-card-modal img {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 12px;
-}
-
-.god-card-modal h2 {
-    margin: 0;
-    font-size: 1.8rem;
-}
-
-.god-card-modal p {
-    font-size: 1rem;
-    margin: 4px 0 10px;
-}
-
-.godcard-floating-btn {
-    position: fixed;
-    top: 20px;
-    left: 220px;
-    z-index: 9999;
-    background: var(--background);
-    padding: 10px;
-    border-radius: 14px;
-    display: none;
-    cursor: pointer;
-    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
-    transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.godcard-floating-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
-}
-
-.godcard-floating-btn img {
-    width: 55px;
-    height: 55px;
-    border-radius: 8px;
-    object-fit: cover;
+    background: var(--accent2);
 }
 
 /* Creature cards */
@@ -270,7 +183,7 @@ button,
     transform: translateY(-8px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
     filter: brightness(1.1);
-    border-color: var(--accent);
+    border-color: var(--accent2);
 }
 
 .creature-card h2 {

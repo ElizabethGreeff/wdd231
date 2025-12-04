@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Spectral+SC&display=swap" rel="stylesheet">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <title>Mytho Magic</title>
@@ -11,11 +14,11 @@
         <!-- Styles -->
         <link rel="stylesheet" href="styles/home.css">
         <link rel="stylesheet" href="styles/home-large.css" media="screen and (min-width:720px)">
+        <link rel="stylesheet" href="styles/god-card.css">
 
         <!-- Scripts -->
         <script src="scripts/navigation.js" defer></script>
         <script src="scripts/deity.js" defer></script>
-        <script src="scripts/colours.js" defer></script>
         <script src="scripts/godcard.js" defer></script>
     </head>
 
@@ -50,7 +53,6 @@
                         <li><a href="pantheons.html">Pantheons</a></li>
                         <li><a href="creatures.html">Creatures</a></li>
                         <li><a href="quiz.html">Quiz</a></li>
-                        <button id="default-theme-btn" class="theme-reset">Reset Theme</button>
                     </ul>
                 </nav>
             </div>
@@ -65,9 +67,9 @@
             </section>
 
             <section class="myth-map-section">
+                <h2 class="section-title">Find creatures in the World...</h2>
                 <div class="map-wrapper">
                     <div class="map-container">
-                        <div id="mapTooltip" class="tooltip"></div>
                         <?xml version="1.0" encoding="utf-8"?>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
                             <a href="creatures.html#greece">
@@ -122,22 +124,19 @@
 
                         <article class="card">
                             <h3>Greek Pantheon</h3>
-                            <p>From Zeus to Athena — a pantheon of heroes, monsters and quests.</p>
-                            <button class="theme-btn" data-theme="Greek">Try Greek Theme</button>
+                            <p>From Zeus to Athena, a pantheon of heroes, monsters and quests.</p>
                             <a href="creatures.html#greece" class="creature-btn">Find Greek creatures...</a>
                         </article>
                     </section>
 
                     <section class="card-wrapper">
-                        <img class="card-bg" src="images/roman_bg.webp" alt="Roman columns">
+                        <img class="card-bg" src="images/roman_bg.webp" alt="Roman Columns">
 
                         <article class="card">
                             <h3>Roman Pantheon</h3>
-                            <p>Roman names, Roman myths — familiar yet distinct.</p>
-                            <button class="theme-btn" data-theme="Roman">Try Roman Theme</button>
+                            <p>Roman names, Roman myths — familiar yet distinct, all with thier own stories to tell...</p>
                             <a href="creatures.html#rome" class="creature-btn">Find Roman creatures...</a>
                         </article>
-
                     </section>
 
                     <section class="card-wrapper">
@@ -146,7 +145,6 @@
                         <article class="card">                            
                             <h3>Egyptian Pantheon</h3>
                             <p>Sands of time and gods of the Nile.</p>
-                            <button class="theme-btn" data-theme="Egyptian">Try Egyptian Theme</button>
                             <a href="creatures.html#egypt" class="creature-btn">Find Egyptian creatures...</a>
                         </article>
                     </section>
@@ -157,22 +155,24 @@
                         <article class="card">                            
                             <h3>Norse Pantheon</h3>
                             <p>Storms, sagas and the deep north.</p>
-                            <button class="theme-btn" data-theme="Norse">Try Norse Theme</button>
                             <a href="creatures.html#norse" class="creature-btn">Find Norse creatures...</a>
                         </article>
                     </section>
                 </div>
             </section>
 
-            <section class="deity-wrapper">
-                <div class="deity-bg" id="deityBg"></div>
-
-                <div class="deity-content" id="deityCard">
-                    <h2 id="deityName"></h2>
-                    <p id="deityPantheon"></p>
-                    <p id="deityBio"></p>
-
-                    <a href="pantheons.html" class="deity-btn">Explore Pantheons</a>
+            <section class="deities">
+                <h2 class="section-title">Deity of the Day</h2>
+                <div class="deity-wrapper">
+                    <div class="deity-bg" id="deityBg"></div>
+                
+                    <div class="deity-content" id="deityCard">
+                        <h2 id="deityName"></h2>
+                        <p id="deityPantheon"></p>
+                        <p id="deityBio"></p>
+                
+                        <a href="pantheons.html" class="deity-btn">Explore Pantheons</a>
+                    </div>
                 </div>
             </section>
 
