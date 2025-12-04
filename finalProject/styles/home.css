@@ -266,7 +266,7 @@ button, .deity-btn, .card {
 }
 
 text {
-    pointer-events: none;
+    cursor: pointer;
 }
 
 /* Pantheons cards */
