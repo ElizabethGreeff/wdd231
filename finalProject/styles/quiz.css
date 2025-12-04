@@ -169,7 +169,7 @@ label {
 
 .submit-btn {
     background: var(--primary);
-    color: white;
+    color: var(--light-text);
     padding: .8rem 1.4rem;
     font-size: 1.1rem;
     border: none;

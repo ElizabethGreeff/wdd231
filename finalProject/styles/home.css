@@ -371,7 +371,7 @@ text {
 .deity-content {
     position: relative;
     padding: 2.5rem;
-    color: white;
+    color: var(--light-text);
     z-index: 2;
     text-align: left;
 }
