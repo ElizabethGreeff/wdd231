@@ -1,6 +1,6 @@
 let allData = {};
 
-async function loadCreatures() {
+export async function loadCreatures() {
     const res = await fetch("data/creatures.json");
     const data = await res.json();
     allData = data;
@@ -15,19 +15,14 @@ async function loadCreatures() {
     }
 }
 
-function highlightFilterButton(hash) {
+export function highlightFilterButton(hash) {
     const filterButton = document.querySelector(`[data-filter="${hash}"]`);
-    if (filterButton) {
-        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-        filterButton.classList.add("active");
-    }
+    if (!filterButton) return;
+    document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+    filterButton.classList.add("active");
 }
 
-window.addEventListener("DOMContentLoaded", () => {
-    loadCreatures();
-});
-
-function displayCreatures(filter) {
+export function displayCreatures(filter) {
     const grid = document.getElementById("creature-grid");
     grid.innerHTML = "";
 
@@ -39,7 +34,7 @@ function displayCreatures(filter) {
     creatures.forEach(creature => createCard(creature, grid));
 }
 
-function createCard(creature, grid) {
+export function createCard(creature, grid) {
     const card = document.createElement("div");
     card.className = "creature-card";
 
@@ -68,12 +63,12 @@ function createCard(creature, grid) {
     grid.appendChild(card);
 }
 
-document.addEventListener("click", e => {
-    if (e.target.classList.contains("filter-btn")) {
-        document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
-        e.target.classList.add("active");
-        displayCreatures(e.target.dataset.filter);
-    }
-});
-
-loadCreatures();
+export function initCreatureFilters() {
+    document.addEventListener("click", e => {
+        if (e.target.classList.contains("filter-btn")) {
+            document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active"));
+            e.target.classList.add("active");
+            displayCreatures(e.target.dataset.filter);
+        }
+    });
+}

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+export function initGodCardModal() {
     const godModal = document.getElementById("god-modal");
     const modalContent = document.querySelector(".god-card-modal");
     const btn = document.getElementById("godcard-btn");
@@ -20,16 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <p><strong>Bonus HP:</strong> ${card.bonusHealth}</p>
     `;
 
-    const showModal = () => {
-        godModal.classList.add("show");
-    };
-
-    const hideModal = () => {
-        godModal.classList.remove("show");
-    };
+    const showModal = () => godModal.classList.add("show");
+    const hideModal = () => godModal.classList.remove("show");
 
     btn.addEventListener("click", showModal);
-
     godModal.addEventListener("click", e => {
         if (e.target === godModal) hideModal();
     });
@@ -38,4 +32,4 @@ document.addEventListener("DOMContentLoaded", () => {
         showModal();
         sessionStorage.removeItem("justGotGod");
     }
-});
+}
