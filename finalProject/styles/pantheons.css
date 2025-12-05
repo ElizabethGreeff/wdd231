@@ -197,6 +197,17 @@ body {
     margin-top: 3rem;
 }
 
+.site-footer a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: var(--heading-font);
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+    color: var(--primary);
+}
+
 .footer-social {
     display: flex;
     justify-content: center;
